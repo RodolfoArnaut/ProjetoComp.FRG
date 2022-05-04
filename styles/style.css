@@ -1,0 +1,26 @@
+*{
+    background: #735943;
+    color: white;
+}
+
+#title{
+    text-align: center;
+    font-size: 40px;
+}
+
+/* #abas{
+    display: inline;
+} */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li{
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 80px;
+    margin-left: 65px;
+}
