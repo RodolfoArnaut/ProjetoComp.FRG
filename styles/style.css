@@ -1,141 +1,136 @@
-*{
-    background: black;
-    color: white;
+* {
+  background: black;
+  color: white;
 }
 
-#title{
-    text-align: center;
-    font-size: 40px;
+#title {
+  text-align: center;
+  font-size: 40px;
 }
 
-/* #abas{
-    display: inline;
-} */
-
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-li{
-    font-size: 30px;
-    display: inline-block;
-    margin-right: 80px;
-    margin-left: 65px;
-
+li {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 80px;
+  margin-left: 65px;
 }
-li:hover{
-    color:grey;
-    transition: 0.3s all;
+li:hover {
+  color: grey;
+  transition: 0.3s all;
 }
 a {
-    color:black;
+  color: black;
 }
 
 #compreBtn {
-    color: white;
-  }
+  color: white;
+}
 
-  #inicio{
-      border: 1px solid white;
-      padding: 13px;
-      border-radius: 20px;
-  }
+#inicio {
+  border: 1px solid white;
+  padding: 13px;
+  border-radius: 20px;
+}
 
-  #sobre{
-    border: 1px solid white;
-    padding: 13px;
-    border-radius: 20px;
-  }
+#sobre {
+  border: 1px solid white;
+  padding: 13px;
+  border-radius: 20px;
+}
 
- #contato{
-    border: 1px solid white;
-    padding: 13px;
-    border-radius: 20px;
-     
- }
+#contato {
+  border: 1px solid white;
+  padding: 13px;
+  border-radius: 20px;
+}
 
-  #navBtn {
-    background: rgb(0, 0, 0);
-    font-size: 20px;
-    color: white;
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
+#navBtn {
+  background: rgb(0, 0, 0);
+  font-size: 20px;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
 body {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-    height: 120vh;
-    width: 120vw;
-   
-  }
- .content{
-      height: 1080px;
-      width: 1080px;
-      border-radius: 20px;
-      overflow: hidden;
-      position:sticky;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  height: 120vh;
+  width: 120vw;
+}
+.content {
+  height: 1080px;
+  width: 1080px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: sticky;
+}
+span {
+  color: rgb(255, 0, 0);
+}
 
-      
-   }
-  span{
-     color: rgb(255, 0, 0); 
-  }
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+.bar {
+  width: 70px;
+  height: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  margin: 0px;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.bar:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
 
-  .navigation {
-      position:absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translate(-50%);
-      display: flex;
-  }
-  .bar {
-      width: 70px;
-      height: 20px;
-      border: 2px solid rgb(255, 255, 255);
-      margin: 0px;
-      border-radius: 1px;
-      cursor: pointer;
-      transition: .3s;
-  }
-  .bar:hover{
-      background-color: rgb(255, 255, 255);
-      transition: .3s;
-  }
-  input {
-      display: none;
-  }
+.slides {
+  display: flex;
+  width: 400%;
+  height: 100%;
+}
+.slide {
+  width: 25%;
+  transition: 0.3s;
+}
 
-  .slides {
-      display: flex;
-      width: 400%;
-      height: 100%;
-  }
-  .slide {
-      width: 25%;
-      transition: .3s;
-  }
+.slide img {
+  width: 100%;
+  height: 100%;
+}
 
-  .slide img {
-      width: 100%;
-      height: 100%;
-  }
+#slide1:checked ~ .s1 {
+  margin-left: 0;
+}
+#slide2:checked ~ .s1 {
+  margin-left: -25%;
+}
+#slide3:checked ~ .s1 {
+  margin-left: -50%;
+}
+#slide4:checked ~ .s1 {
+  margin-left: -75%;
+}
 
-  #slide1:checked ~ .s1 {
-      margin-left: 0;
-  }
-  #slide2:checked ~ .s1 {
-      margin-left: -25%;
-  }
-  #slide3:checked ~ .s1 {
-      margin-left: -50%;
-  }    
-  #slide4:checked ~ .s1 {
-      margin-left: -75%;
+#emailBox {
+  background: white;
+  color: black;
+}
 
-  }
-
-
+#emailBtn {
+  background: white;
+  color: black;
+}
