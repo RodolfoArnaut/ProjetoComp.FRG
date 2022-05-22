@@ -8,20 +8,22 @@
     />
     <link rel="stylesheet" href="./styles/style.css">
     <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Ovo?category=Serif,Sans+Serif&subset=latin&thickness=4&slant=1&width=7&stylecount=1#standard-styles"> -->
-    <title>HOME</title>
+    <link href="/styles/fonts.css" rel="stylesheet">
+    <title>FRG</title>
   </head>
   <body>
     <header>
-      <a href="home.html"> <h1 id="title">FRG <br> BARBER</h1> </a>
+      <a href="home.html"> <h1 id="title">FRG <br> BARBER </h1> </a>
       
       <hr />
     </header>
       <div class="menu">
     <nav>
       <ul>
-        <a  href="home.html" id="inicio"><li>Início</li> </a>
-        <a   href="home.html" id="sobre"><li>Sobre</li> </a>
-        <a href="home.html" id="contato"><li>Contato</li> </a>
+        <a href="home.html" id="Inicio"><li>Início</li> </a>
+        <a href="home.html" id="Sobre"><li>Sobre</li> </a>
+        <a href="home.html" id="Contato"><li>Contato</li> </a>
+       
       </ul>
     </nav>
     </div>
@@ -31,26 +33,50 @@
     <div id="Texto promocional">
     <main>
       <aside>
-        <h2>O melhor para você</h2>
-        <h2>Com o melhor preço do mercado</h2>
+        <h2><span>O melhor para você</span></h2>
+        <h2><span>Com o melhor preço do mercado</span></h2>
         <p>
           Cuidar da própria aparência é essencial, e para isso você merece
-          <br />
-          o que há de melhor no mercado
+          
+
+    
         </p>
       </aside>
+    </div>
+    <div class="content">
+      <div class="slides">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+        
+
+        <div class="slide s1"> 
+          <img src="./imagens/barber.png" alt="">
+        </div>
+        <div class="slide"> 
+          <img src="./imagens/img01.jpg" alt="">
+        </div>
+        <div class="slide"> 
+          <img src="./imagens/img02.jpg" alt="">
+        </div>
+        <div class="slide"> 
+          <img src="./imagens/img03.jpg" alt="">
+        </div>
+        <div class="navigation">
+          <label class="bar"for="slide1"></label>
+          <label class="bar"for="slide2"></label>
+          <label class="bar"for="slide3"></label>
+          <label class="bar"for="slide4"></label>
+        </div>
+
+      </div>
     </div>
 
       <hr />
 
       <article>
-        <div id="Imagem promocional">
-        <img
-          src="./Images/barber.png"
-          height="450"
-          width="450"
-          alt="barber.png"
-        />
+        
         </div>
         <br />
         <br />
@@ -61,12 +87,12 @@
             <p>
               A máquina de barbear Mondial Super Groom é ideal para homens que
               sabem se cuidar <br />
-              e reconhecem seu valor. o produto está disponível nas cores preto
-              e azul <br />
+              e reconhecem seu valor. <span>produto está disponível nas cores preto
+              e azul</span><br />
               <br />
             </p>
-          </div>
-
+      </div>
+         
           <hr />
 
           <div id="Imagens e avaliacoes">
@@ -93,26 +119,8 @@
             alt="avaliacao03.png"
           />
           <br />
-          <img
-            src="./Images/img01.jpg"
-            height="400"
-            width="400"
-            alt="img01.jpg"
-          />
-
-          <img
-            src="./Images/img02.jpg"
-            height="400"
-            width="400"
-            alt="img02.jpg"
-          />
-
-          <img
-            src="./Images/img03.jpg"
-            height="400"
-            width="400"
-            alt="img03.jpg"
-          />
+          
+          
           </div>
           <hr />
 
@@ -129,13 +137,13 @@
           <br> <br> <br>
 
           <div id="email newsletter">
-          <!--Email box-->
-          <form action=".php" method="post">
-            <!--AINDA FALTA CRIAR E ADICIONAR O ARQUIVO PHP-->
-            Insira seu email para receber nossas novidades:
-            <input type="text" name="email" />
-            <input type="submit" />
-          </form>
+            <!--Email box-->
+            <form action=".php" method="post">
+              <!--AINDA FALTA CRIAR E ADICIONAR O ARQUIVO PHP-->
+              Insira seu email para receber nossas novidades:
+              <input type="text" name="email" />
+              <input type="submit" />
+            </form>
           </div>
 
           <hr />
@@ -145,7 +153,7 @@
 
         <div id="copyright">
           <p>
-            Filipe Eduardo, Rodolfo Arnaut e Gustavo Rezende - copyright © 2022
+            Filipe Eduardo, Rodolfo Arnaut e Gustavo Resende - copyright © 2022
           </p>
         </div>
       </article>
