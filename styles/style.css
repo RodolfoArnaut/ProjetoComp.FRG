@@ -28,8 +28,19 @@ a {
   color: black;
 }
 
+#compreaqui {
+  text-align: center;
+}
+
 #compreBtn {
   color: white;
+  background: #000000;
+
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 80px;
+  margin-left: 65px;
+  justify-content: center;
 }
 
 #inicio {
@@ -73,7 +84,7 @@ body {
   position: sticky;
 }
 span {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .navigation {
@@ -104,7 +115,7 @@ span {
 }
 .slide {
   width: 25%;
-  transition: 0.3s;
+  transition: 1s;
 }
 
 .slide img {
@@ -133,4 +144,23 @@ span {
 #emailBtn {
   background: white;
   color: black;
+}
+
+#voltar-ao-topo {
+  text-decoration: none;
+  color: white;
+  background-color: #333030;
+  padding: 20px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  box-shadow: 3px 3px 10px #333030;
+}
+
+#slide1,
+#slide2,
+#slide3,
+#slide4,
+.bar input {
+  display: none;
 }
