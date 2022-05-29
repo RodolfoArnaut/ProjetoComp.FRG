@@ -6,9 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=
   , initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/style.css">
-  <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Ovo?category=Serif,Sans+Serif&subset=latin&thickness=4&slant=1&width=7&stylecount=1#standard-styles"> -->
-  <link href="/styles/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styleHome.css">
   <title>FRG</title>
 </head>
 
@@ -23,13 +21,13 @@
   <div class="menu">
     <nav>
       <ul>
-        <a href="home.html" id="Inicio">
+        <a href="./home.html" id="Inicio">
           <li>Início</li>
         </a>
-        <a href="ProjetoComp.html" id="Sobre">
+        <a href="./sobre.html" id="Sobre">
           <li>Sobre</li>
         </a>
-        <a href="home.html" id="Contato">
+        <a href="./contato.html" id="Contato">
           <li>Contato</li>
         </a>
 
@@ -119,28 +117,29 @@
       <hr />
 
       <div id="compreaqui">
-        <button>
-          <a id="compreBtn" href="https://www.amazon.com.br/Aparador-Bivolt-Mondial-BG-03-Pequeno/dp/B07DP2S4PC/?_encoding=UTF8&pd_rd_w=ELm5s&pf_rd_p=14d5ed16-4c5a-41d7-ba6d-05be6b893f48&pf_rd_r=GFT67SH4ZQN09MC8TNMH&pd_rd_r=98322e37-d2be-44d4-b482-695d80265552&pd_rd_wg=ZfFow&ref_=pd_gw_ci_mcx_mr_hp_atf_m" target="_blank">COMPRE AQUI
+          <a id="compreBtn" href="https://www.amazon.com.br/Aparador-Bivolt-Mondial-BG-03-Pequeno/dp/B07DP2S4PC/?_encoding=UTF8&pd_rd_w=ELm5s&pf_rd_p=14d5ed16-4c5a-41d7-ba6d-05be6b893f48&pf_rd_r=GFT67SH4ZQN09MC8TNMH&pd_rd_r=98322e37-d2be-44d4-b482-695d80265552&pd_rd_wg=ZfFow&ref_=pd_gw_ci_mcx_mr_hp_atf_m" 
+          target="_blank">COMPRE AQUI!
           </a>
-        </button>
       </div>
 
       <br> <br> <br>
 
-      <!--Email box-->
-      <!--AINDA FALTA CRIAR E ADICIONAR O ARQUIVO PHP-->
-      <form action="./php/getEmail.php" method="post">
-        Insira seu email para receber nossas novidades:
-        <input type="text" name="email" id="emailBox" />
+      <!--INSCRIÇÕES-->
+      <form action="./php/inscricoes.php" method="post">
+        Insira seus dados para receber nossas novidades: <br>
+        <label for="name">Nome:</label> 
+        <input type="text" name="name" id="nameBox" /><br>
+        <label for="email">Email:</label> 
+        <input type="text" name="email" id="emailBox" /><br>
         <input type="submit" id="emailBtn" />
       </form>
 
-      <hr />
       <br> <br>
      <a id="voltar-ao-topo" href="#">&#9651;</a>
       <br> <br>
 
       <div id="copyright">
+        <hr>
         <p>
           Filipe Eduardo, Rodolfo Arnaut e Gustavo Resende - copyright © 2022
         </p>

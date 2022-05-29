@@ -1,5 +1,5 @@
 * {
-  background: black;
+  background: rgb(28, 28, 53);
   color: white;
 }
 
@@ -25,7 +25,7 @@ li:hover {
   transition: 0.3s all;
 }
 a {
-  color: black;
+  color: rgb(28, 28, 53);
 }
 
 #compreaqui {
@@ -34,13 +34,18 @@ a {
 
 #compreBtn {
   color: white;
-  background: #000000;
-
+  background: green;
+  padding: 10px 15px;
+  text-decoration: none;
   font-size: 30px;
   display: inline-block;
-  margin-right: 80px;
-  margin-left: 65px;
+  margin: 0 auto;
   justify-content: center;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+#compreBtn:hover {
+  background: #545557;
 }
 
 #inicio {
@@ -61,14 +66,6 @@ a {
   border-radius: 20px;
 }
 
-#navBtn {
-  background: rgb(0, 0, 0);
-  font-size: 20px;
-  color: white;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
 body {
   max-width: 1200px;
   margin: 0 auto;
@@ -136,7 +133,8 @@ span {
   margin-left: -75%;
 }
 
-#emailBox {
+#emailBox,
+#nameBox {
   background: white;
   color: black;
 }
@@ -163,4 +161,8 @@ span {
 #slide4,
 .bar input {
   display: none;
+}
+
+#copyright {
+  text-align: center;
 }
