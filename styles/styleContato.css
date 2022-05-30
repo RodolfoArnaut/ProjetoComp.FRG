@@ -102,9 +102,9 @@ textarea {
 }
 
 input.enviarBtn {
-  background: #545557;
+  background: rgb(230, 230, 230);
   padding: 15px 0;
-  color: white;
+  color: #1b1c1e;
   font-size: 18px;
   border-bottom: none;
   margin-top: 30px;
@@ -112,8 +112,8 @@ input.enviarBtn {
   transition: all 0.5s ease;
 }
 input.enviarBtn:hover {
-  background: #fff;
-  color: #1b1c1e;
+  background: #7e7f83;
+  color: white;
 }
 
 input:focus,

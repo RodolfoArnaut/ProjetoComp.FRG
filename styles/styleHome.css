@@ -45,7 +45,7 @@ a {
   transition: all 0.5s ease;
 }
 #compreBtn:hover {
-  background: #545557;
+  background: rgb(18, 146, 189);
 }
 
 #inicio {
