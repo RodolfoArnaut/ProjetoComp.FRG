@@ -166,3 +166,58 @@ span {
 #copyright {
   text-align: center;
 }
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 0;
+}
+input,
+label {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  color: #fff;
+}
+#nameBox,
+#emailBox {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+input#emailBtn {
+  background: rgb(230, 230, 230);
+  padding: 15px 0;
+  color: #1b1c1e;
+  font-size: 18px;
+  border-bottom: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+input#emailBtn:hover {
+  background: #7e7f83;
+  color: white;
+}
+
+input:focus {
+  outline: 1px solid white;
+}
+p#enviarDados {
+  font-size: 37px;
+  text-align: center;
+}
+
+.emailForm * {
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+label {
+  font-size: 25px;
+}

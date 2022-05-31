@@ -114,25 +114,27 @@
 
 
       </div>
-      <hr />
 
       <div id="compreaqui">
           <a id="compreBtn" href="https://www.amazon.com.br/Aparador-Bivolt-Mondial-BG-03-Pequeno/dp/B07DP2S4PC/?_encoding=UTF8&pd_rd_w=ELm5s&pf_rd_p=14d5ed16-4c5a-41d7-ba6d-05be6b893f48&pf_rd_r=GFT67SH4ZQN09MC8TNMH&pd_rd_r=98322e37-d2be-44d4-b482-695d80265552&pd_rd_wg=ZfFow&ref_=pd_gw_ci_mcx_mr_hp_atf_m" 
           target="_blank">COMPRE AQUI!
           </a>
       </div>
+      <hr>
 
       <br> <br> <br>
 
       <!--INSCRIÇÕES-->
-      <form action="./php/inscricoes.php" method="post">
-        Insira seus dados para receber nossas novidades: <br>
-        <label for="name">Nome:</label> 
-        <input type="text" name="name" id="nameBox" /><br>
-        <label for="email">Email:</label> 
-        <input type="text" name="email" id="emailBox" /><br>
-        <input type="submit" id="emailBtn" />
-      </form>
+      <div class="emailForm">
+        <form action="./php/inscricoes.php" method="post">
+          <p id="enviarDados">Insira seus dados para receber nossas novidades:</p>
+          <label for="name">Nome:</label> 
+          <input type="text" name="name" id="nameBox" /><br>
+          <label for="email">Email:</label> 
+          <input type="text" name="email" id="emailBox" /><br>
+          <input type="submit" id="emailBtn" />
+        </form>
+      </div>
 
       <br> <br>
      <a id="voltar-ao-topo" href="#">&#9651;</a>

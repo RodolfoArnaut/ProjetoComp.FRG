@@ -16,10 +16,10 @@ if ($mysqli->connect_errno) {
 }
 
 // enviar notificação email
-$mailHeader = "De:" . $name . "<" . $email . ">\r\n";
-$emailDestino = "montilho12@gmail.com";
+// $mailHeader = "De:" . $name . "<" . $email . ">\r\n";
+// $emailDestino = "montilho12@gmail.com";
 
-mail($emailDestino, $assunto, $mensagem, $mailHeader)
-    or die("Error!");
+// mail($emailDestino, $assunto, $mensagem, $mailHeader)
+//     or die("Error!");
 
-echo "mensagem enviada!";
+// echo "mensagem enviada!";
