@@ -1,6 +1,6 @@
 <?php
 
-$hostname = "localhost:3307";
+$hostname = "127.0.0.1:3307";
 $bancodedados = "frg";
 $usuario = "root";
 $senha = "";
@@ -13,16 +13,8 @@ if ($mysqli->connect_errno) {
     echo "Falha ao conectar: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }
 
-var_dump($mysqli);
-
-$insert = "INSERT INTO inscritos (id, Nome, email, data_inscricao) VALUES (NULL, $name, $email, current_timestamp())";
-if ($mysqli->query($insert) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $insert . "<br>" . $mysqli->error;
-}
-
-$mysqli->close();
+$insert = "INSERT INTO `inscritos` (`id`, `Nome`, `email`, `data_inscricao`) VALUES (NULL, '{$name}', '{$email}', current_timestamp());";
+mysqli_query($mysqli, $insert); // executa a query
 
 // enviar notificação email
 // $mailHeader = "De:" . $name . "<" . $email . ">\r\n";

@@ -1,9 +1,9 @@
 <?php
 
-$hostname = "localhost";
+$hostname = "127.0.0.1:3307";
 $bancodedados = "frg";
-$usuario = "FRG";
-$senha = "frg123";
+$usuario = "root";
+$senha = "";
 $name = $_POST['name'];
 $email = $_POST['email'];
 $assunto = $_POST['assunto'];
@@ -14,6 +14,9 @@ $mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
 if ($mysqli->connect_errno) {
     echo "Falha ao conectar: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }
+
+$insert = "INSERT INTO `contato` (`id`, `Nome`, `email`, `assunto`, `mensagem`, `data_mensagem`) VALUES (NULL, '{$name}', '{$email}', '{$assunto}', '{$mensagem}', current_timestamp());";
+mysqli_query($mysqli, $insert); // executa a query
 
 // enviar notificação email
 // $mailHeader = "De:" . $name . "<" . $email . ">\r\n";
