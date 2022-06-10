@@ -1,10 +1,10 @@
     <?php
     include_once 'sql.php';
 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $assunto = $_POST['assunto'];
-    $mensagem = $_POST['mensagem'];
+    $name = mysqli_real_escape_string($mysqli, $_POST['name']);
+    $email = mysqli_real_escape_string($mysqli, $_POST['email']);
+    $assunto = mysqli_real_escape_string($mysqli, $_POST['assunto']);
+    $mensagem = mysqli_real_escape_string($mysqli, $_POST['mensagem']);
 
     $insert = "INSERT INTO `contato` (`id`, `Nome`, `email`, `assunto`, `mensagem`, `data_mensagem`) 
     VALUES (NULL, '{$name}', '{$email}', '{$assunto}', '{$mensagem}', current_timestamp());";

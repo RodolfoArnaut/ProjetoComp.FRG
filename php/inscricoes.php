@@ -1,8 +1,8 @@
     <?php
     include_once 'sql.php';
 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
+    $name = mysqli_real_escape_string($mysqli, $_POST['name']);
+    $email = mysqli_real_escape_string($mysqli, $_POST['email']);
 
     $insert = "INSERT INTO `inscritos` (`id`, `Nome`, `email`, `data_inscricao`) 
     VALUES (NULL, '{$name}', '{$email}', current_timestamp());";
