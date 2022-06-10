@@ -221,3 +221,9 @@ p#enviarDados {
 label {
   font-size: 25px;
 }
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: white;
+  font-weight: 400;
+}

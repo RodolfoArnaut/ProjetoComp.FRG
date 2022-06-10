@@ -1,0 +1,70 @@
+* {
+  background: rgb(28, 28, 53);
+  color: white;
+}
+
+#title {
+  text-align: center;
+  font-size: 40px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 80px;
+  margin-left: 65px;
+}
+li:hover {
+  color: grey;
+  transition: 0.3s all;
+}
+a {
+  color: rgb(28, 28, 53);
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  height: 120vh;
+  width: 120vw;
+  text-align: center;
+}
+
+#voltar-ao-topo {
+  text-decoration: none;
+  color: white;
+  background-color: #333030;
+  padding: 20px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  box-shadow: 3px 3px 10px #333030;
+}
+
+.contactForm * {
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 1320px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: white;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Poppins", serif;
+}
