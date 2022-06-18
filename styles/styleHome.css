@@ -227,3 +227,8 @@ h1 {
   color: white;
   font-weight: 400;
 }
+p,
+input,
+label {
+  font-family: "Poppins", serif;
+}

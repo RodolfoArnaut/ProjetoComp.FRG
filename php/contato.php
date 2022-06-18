@@ -1,4 +1,4 @@
-    <?php
+<?php
     include_once 'sql.php';
 
     $name = mysqli_real_escape_string($mysqli, $_POST['name']);
@@ -21,4 +21,3 @@
     //     or die("Error!");
 
     // echo "mensagem enviada!";
-    ?>
