@@ -36,6 +36,9 @@
 
         $mail->setFrom($email);
         $mail->addAddress('barberfrg@gmail.com');
+        $mail->addCC('filipe.costa2@alunos.unis.edu.br');
+        $mail->addCC('gustavo.faria1@alunos.unis.edu.br');
+        $mail->addCC('rodolfo.silva3@alunos.unis.edu.br');
 
         $mail->isHTML(true);
         $mail->Subject = 'Novo(a) cliente inscrito na newsletter FRG Barber!';

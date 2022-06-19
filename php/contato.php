@@ -7,7 +7,7 @@ require_once './src/Exception.php';
 $name = mysqli_real_escape_string($mysqli, $_POST['name']);
 $email = mysqli_real_escape_string($mysqli, $_POST['email']);
 $assunto = mysqli_real_escape_string($mysqli, $_POST['assunto']);
-$mensagem = mysqli_real_escape_string($mysqli, $_POST['mensagem']);
+$mensagem = mysqli_real_escape_string($mysqli, nl2br($_POST['mensagem']));
 
 date_default_timezone_set("America/Argentina/Buenos_Aires"); //mesmo fuso horário que Brasília
 $data_envio = date('d/m/Y');
@@ -38,6 +38,10 @@ try {
 
     $mail->setFrom($email);
     $mail->addAddress('barberfrg@gmail.com');
+    $mail->addCC('filipe.costa2@alunos.unis.edu.br');
+    $mail->addCC('gustavo.faria1@alunos.unis.edu.br');
+    $mail->addCC('rodolfo.silva3@alunos.unis.edu.br');
+
 
     $mail->isHTML(true);
     $mail->Subject = $assunto;
