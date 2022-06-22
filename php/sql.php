@@ -1,8 +1,8 @@
 <?php
-$hostname = "127.0.0.1:3307";
-$bancodedados = "frg";
-$usuario = "root";
-$senha = "";
+$hostname = "localhost";
+$bancodedados = "id19148350_frg";
+$usuario = "id19148350_frgbarber";
+$senha = "FilipeRodolfoGustavo@123";
 
 // Conectar ao banco de dados
 $mysqli = mysqli_connect($hostname, $usuario, $senha, $bancodedados);
