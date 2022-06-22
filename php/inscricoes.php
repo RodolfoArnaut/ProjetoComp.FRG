@@ -4,6 +4,8 @@
     require_once './src/SMTP.php';
     require_once './src/Exception.php';
 
+    $status = false;
+
     $name = mysqli_real_escape_string($mysqli, $_POST['name']);
     $email = mysqli_real_escape_string($mysqli, $_POST['email']);
 
@@ -60,5 +62,15 @@
         echo "Erro ao enviar mensagem: {$mail->ErrorInfo}";
     }
 
-    header("Location: ../obgInscrito.html");
+    if ($insert && $mail->send()) {
+        $status = true;
+    }
+
+    if ($status = true) {
+        echo "<script language='javascript'>
+        window.location.href = \"../obgInscrito.html\";
+        </script>
+        ";
+    }
+
     ?>

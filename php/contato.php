@@ -4,6 +4,8 @@ require_once './src/PHPMailer.php';
 require_once './src/SMTP.php';
 require_once './src/Exception.php';
 
+$status = false;
+
 $name = mysqli_real_escape_string($mysqli, $_POST['name']);
 $email = mysqli_real_escape_string($mysqli, $_POST['email']);
 $assunto = mysqli_real_escape_string($mysqli, $_POST['assunto']);
@@ -64,4 +66,13 @@ try {
     echo "Erro ao enviar mensagem: {$mail->ErrorInfo}";
 }
 
-header("Location: ../obgContato.html");
+if ($insert && $mail->send()) {
+    $status = true;
+}
+
+if ($status = true) {
+    echo "<script language='javascript'>
+    window.location.href = \"../obgContato.html\";
+    </script>
+    ";
+}
