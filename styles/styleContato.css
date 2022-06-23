@@ -135,3 +135,10 @@ textarea:focus {
 p#copyright {
   font-size: 25px;
 }
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}

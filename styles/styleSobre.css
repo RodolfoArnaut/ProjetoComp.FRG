@@ -88,7 +88,7 @@ table.tableHorario {
   margin-right: auto;
 }
 
-h2 {
+h1 {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   color: white;
@@ -119,4 +119,11 @@ p#domingoMsg {
 
 p#copyright {
   font-size: 25px;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
 }

@@ -221,7 +221,7 @@ p#enviarDados {
 label {
   font-size: 25px;
 }
-h2 {
+h1 {
   font-family: "Playfair Display", serif;
   font-size: 35px;
   color: white;
@@ -229,7 +229,7 @@ h2 {
   text-align: center;
 }
 
-h3 {
+h2 {
   font-family: "Playfair Display", serif;
   font-size: 30px;
   color: white;
@@ -256,4 +256,11 @@ p#copyright {
 }
 ::placeholder {
   color: #c2c2c2;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
 }
