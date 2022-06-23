@@ -1,7 +1,12 @@
-* {
-  background: rgb(28, 28, 53);
-  color: white;
-}
+  body {
+    color: white;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../Images/Fundo3.jpg);
+   
+    
+  }
 
 #title {
   text-align: center;
@@ -25,7 +30,7 @@ li:hover {
   transition: 0.3s all;
 }
 a {
-  color: rgb(28, 28, 53);
+  color: rgb(255, 255, 255);
 }
 
 #compreaqui {
