@@ -66,7 +66,7 @@ try {
     echo "Erro ao enviar mensagem: {$mail->ErrorInfo}";
 }
 
-if ($insert && $mail->send()) {
+if ($insert && $mail) {
     $status = true;
 }
 
