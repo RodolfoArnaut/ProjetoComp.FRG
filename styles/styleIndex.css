@@ -254,3 +254,6 @@ p {
 p#copyright {
   font-size: 25px;
 }
+::placeholder {
+  color: #c2c2c2;
+}
