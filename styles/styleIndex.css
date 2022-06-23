@@ -1,12 +1,10 @@
-  body {
-    color: white;
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center center;
-    background-image: url(../Images/Fundo3.jpg);
-   
-    
-  }
+body {
+  color: white;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../Images/Fundo3.jpg);
+}
 
 #title {
   text-align: center;
@@ -251,4 +249,8 @@ p {
   text-align: justify;
   margin: 0 auto;
   padding: 20px 5px 20px 5px;
+}
+
+p#copyright {
+  font-size: 25px;
 }
