@@ -13,5 +13,6 @@ preloadImages(
   "../images/Fundo3.jpg",
   "../images/img01.jpg",
   "../images/img02.jpg",
-  "../images/img03.jpg"
+  "../images/img03.jpg",
+  "../images/Logo.png"
 );

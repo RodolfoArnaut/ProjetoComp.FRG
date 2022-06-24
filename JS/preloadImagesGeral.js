@@ -8,4 +8,4 @@ function preloadImages() {
   }
 }
 
-preloadImages("../images/Fundo3.jpg");
+preloadImages("../images/Fundo3.jpg", "../images/Logo.png");
