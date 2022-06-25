@@ -41,14 +41,17 @@ body {
 }
 
 #voltar-ao-topo {
+  font-family: "Poppins", serif;
   text-decoration: none;
   color: white;
   background-color: #333030;
-  padding: 20px;
+  padding: 10px;
   position: fixed;
   right: 10px;
   bottom: 10px;
   box-shadow: 3px 3px 10px #333030;
+  font-size: 18px;
+  border-radius: 4px;
 }
 
 table,
@@ -119,6 +122,7 @@ p#domingoMsg {
 
 p#copyright {
   font-size: 25px;
+  font-family: "Poppins", serif;
 }
 
 #logo {
@@ -126,4 +130,18 @@ p#copyright {
   margin-left: auto;
   margin-right: auto;
   width: 25%;
+}
+
+#compre-agora {
+  font-family: "Poppins", serif;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  padding: 8px;
+  position: fixed;
+  left: 50px;
+  bottom: 10px;
+  box-shadow: 3px 3px 10px #333030;
+  font-size: 18px;
+  border-radius: 4px;
 }

@@ -38,9 +38,9 @@ a {
 #compreBtn {
   color: white;
   background: green;
-  padding: 10px 15px;
+  padding: 20px 30px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 42px;
   display: inline-block;
   margin: 0 auto;
   justify-content: center;
@@ -145,14 +145,17 @@ body {
 }
 
 #voltar-ao-topo {
+  font-family: "Poppins", serif;
   text-decoration: none;
   color: white;
   background-color: #333030;
-  padding: 20px;
+  padding: 10px;
   position: fixed;
   right: 10px;
   bottom: 10px;
   box-shadow: 3px 3px 10px #333030;
+  font-size: 18px;
+  border-radius: 4px;
 }
 
 #slide1,
@@ -263,4 +266,58 @@ p#copyright {
   margin-left: auto;
   margin-right: auto;
   width: 25%;
+}
+
+/* #avaliacoes > img {
+  display: block;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 2px;
+} */
+
+#ava01,
+#ava02,
+#ava03,
+#ava04,
+#ava05,
+#ava06,
+#ava07,
+#ava08 {
+  border-radius: 7px;
+  box-shadow: 1px 4px 10px 4px rgb(11, 11, 56);
+  margin: 5px;
+  /* margin-left: 110px; */
+  height: 125px;
+}
+
+#ava01,
+#ava03,
+#ava05,
+#ava07 {
+  margin-left: 155px;
+}
+#ava02,
+#ava04,
+#ava06,
+#ava08 {
+  margin-left: 30px;
+}
+
+#txt_ava {
+  font-size: 45px;
+  text-align: center;
+}
+
+#compre-agora {
+  font-family: "Poppins", serif;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  padding: 8px;
+  position: fixed;
+  left: 50px;
+  bottom: 10px;
+  box-shadow: 3px 3px 10px #333030;
+  font-size: 18px;
+  border-radius: 4px;
 }
