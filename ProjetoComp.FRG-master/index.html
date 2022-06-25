@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=
+  , initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/styleIndex.css">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  <title>FRG</title>
+</head>
+
+<body>
+  <header>
+    <a href="./index.html">
+      <img src="./images/Logo.png" alt="FRGBarber logo" id="logo">
+    </a>
+
+    <hr />
+  </header>
+  <div class="menu">
+    <nav>
+      <ul>
+        <a href="./index.html" id="Inicio">
+          <li>Início</li>
+        </a>
+        <a href="./sobre.html" id="Sobre">
+          <li>Sobre</li>
+        </a>
+        <a href="./contato.html" id="Contato">
+          <li>Contato</li>
+        </a>
+
+      </ul>
+    </nav>
+  </div>
+
+  <hr />
+
+  <div id="Texto promocional">
+    <main>
+      <aside>
+        <h1><span>O melhor para você, com o melhor preço do mercado!</span></h1>
+        <p>
+          Cuidar da própria aparência é essencial, e para isso nossos produtos são ideais para você.
+          Cuidando de todas as suas necessidades a máquina de barbear <span>Mondial SuperGroom-10</span> é a parceira ideal para todo homem
+          Ideal para qualquer um que quer se cuidar e possui mais que 15 anos de idade.
+          Invista em você e na sua saúde e adquira agora mesmo a máquina de <span>Mondial SuperGroom-10</span>. <br><br>
+          
+        </p>
+        <h2>
+          <span>Confira abaixo os diversos benefícios e opções que nosso produto apresenta:</span>
+        </h2>
+      </aside>
+  </div>
+  <div class="content">
+    <div class="slides">
+      <input type="radio" name="slide" id="slide1" checked>
+      <input type="radio" name="slide" id="slide2">
+      <input type="radio" name="slide" id="slide3">
+      <input type="radio" name="slide" id="slide4">
+
+
+      <div class="slide s1">
+        <img src="./images/barber.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="./images/img01.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="./images/img02.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="./images/img03.jpg" alt="">
+      </div>
+      <div class="navigation">
+        <label class="bar" for="slide1"></label>
+        <label class="bar" for="slide2"></label>
+        <label class="bar" for="slide3"></label>
+        <label class="bar" for="slide4"></label>
+      </div>
+
+    </div>
+  </div>
+
+  <hr />
+
+  <article>
+
+    </div>
+    <br />
+    <br />
+    <br />
+    <hr />
+    <div>
+      <div id="Pontos positivos">
+        <p>
+          A máquina de barbear Mondial Super Groom é ideal para homens que
+          sabem se cuidar <br />
+          e reconhecem seu valor. <span>produto está disponível nas cores preto
+            e azul</span><br />
+          <br />
+        </p>
+      </div>
+
+      <hr />
+
+      <div id="Imagens e avaliacoes">
+        <!--Área para as avaliações de cliente e algumas imagens do produto-->
+        <img src="./Images/Avaliação De Clientes 2.png" height="400" width="400" alt="avaliacao01.png" />
+
+        
+        <br />
+       
+      </div>
+
+      <div id="compreaqui">
+          <a id="compreBtn" href="https://www.amazon.com.br/Aparador-Bivolt-Mondial-BG-03-Pequeno/dp/B07DP2S4PC/?_encoding=UTF8&pd_rd_w=ELm5s&pf_rd_p=14d5ed16-4c5a-41d7-ba6d-05be6b893f48&pf_rd_r=GFT67SH4ZQN09MC8TNMH&pd_rd_r=98322e37-d2be-44d4-b482-695d80265552&pd_rd_wg=ZfFow&ref_=pd_gw_ci_mcx_mr_hp_atf_m" 
+          target="_blank">COMPRE AQUI!
+          </a>
+      </div>
+      <hr>
+
+      <br> <br> <br>
+
+      <!--INSCRIÇÕES-->
+      <div class="emailForm">
+        <form action="./php/inscricoes.php" method="post">
+          <p id="enviarDados">Insira seus dados para receber nossas novidades:</p>
+          <label for="name">Nome:</label> 
+          <input type="text" name="name" id="nameBox" placeholder="Seu nome completo" required/><br>
+          <label for="email">Email:</label> 
+          <input type="email" name="email" id="emailBox" placeholder="email@exemplo.com" required/><br>
+          <input type="submit" id="emailBtn" />
+        </form>
+      </div>
+
+      <br> <br>
+     <a id="voltar-ao-topo" href="#">&#9651;</a>
+      <br> <br>
+
+      <div>
+        <hr>
+        <p id="copyright">
+          Filipe Eduardo, Rodolfo Arnaut e Gustavo Resende - copyright © 2022
+        </p>
+      </div>
+  </article>
+  </main>
+  <script src="./JS/preloadImagesIndex.js"></script>
+</body>
+
+</html>

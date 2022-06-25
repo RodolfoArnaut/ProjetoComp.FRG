@@ -1,0 +1,129 @@
+body {
+  color: white;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../images/Fundo3.jpg);
+}
+
+#title {
+  text-align: center;
+  font-size: 40px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 80px;
+  margin-left: 65px;
+}
+li:hover {
+  color: grey;
+  transition: 0.3s all;
+}
+a {
+  color: rgb(255, 255, 255);
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  height: 120vh;
+  width: 120vw;
+  text-align: center;
+}
+
+#voltar-ao-topo {
+  text-decoration: none;
+  color: white;
+  background-color: #333030;
+  padding: 20px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  box-shadow: 3px 3px 10px #333030;
+}
+
+table,
+td,
+th {
+  border: 1px solid white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 30%;
+}
+
+td {
+  text-align: center;
+}
+
+.tableHorario {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.tableHorario thead tr {
+  color: #ffffff;
+  text-align: left;
+}
+.tableHorario th,
+.tableHorario td {
+  padding: 12px 15px;
+}
+
+table.tableHorario {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: white;
+  font-weight: 400;
+}
+
+p {
+  color: #d2d2d2;
+}
+
+p#sobreNos {
+  color: #fff;
+  font-size: 25px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 20px 5px 20px 5px;
+  /* border: 2px solid; */
+}
+
+p#hFuncionamento {
+  color: #fff;
+  font-size: 40px;
+}
+p#domingoMsg {
+  color: #fff;
+  font-size: 30px;
+}
+
+p#copyright {
+  font-size: 25px;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
