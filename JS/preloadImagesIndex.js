@@ -22,5 +22,6 @@ preloadImages(
   "../images/avaliacao05.png",
   "../images/avaliacao06.png",
   "../images/avaliacao07.png",
-  "../images/avaliacao08.png"
+  "../images/avaliacao08.png",
+  "../images/favicon.ico"
 );
