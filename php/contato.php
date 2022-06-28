@@ -4,22 +4,22 @@ require_once './src/PHPMailer.php';
 require_once './src/SMTP.php';
 require_once './src/Exception.php';
 
-$status = false;
 
 $name = mysqli_real_escape_string($mysqli, $_POST['name']);
 $email = mysqli_real_escape_string($mysqli, $_POST['email']);
 $assunto = mysqli_real_escape_string($mysqli, $_POST['assunto']);
 $mensagem = mysqli_real_escape_string($mysqli, nl2br($_POST['mensagem']));
 
-date_default_timezone_set("America/Argentina/Buenos_Aires"); //mesmo fuso horário que Brasília
-$data_envio = date('d/m/Y');
-$hora_envio = date('H:i:s');
-
 $insert = "INSERT INTO `contato` (`id`, `Nome`, `email`, `assunto`, `mensagem`, `data_mensagem`) 
     VALUES (NULL, '{$name}', '{$email}', '{$assunto}', '{$mensagem}', current_timestamp());";
 
 mysqli_query($mysqli, $insert); // executa a query
 
+
+date_default_timezone_set("America/Argentina/Buenos_Aires"); //mesmo fuso horário que Brasília
+$data_envio = date('d/m/Y');
+$hora_envio = date('H:i:s');
+$status = false;
 
 //enviar notificação email
 use PHPMailer\PHPMailer\PHPMailer;

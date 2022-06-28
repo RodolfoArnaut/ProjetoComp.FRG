@@ -17,13 +17,13 @@ nav {
   justify-content: center;
 }
 
-li {
+li.aba {
   font-size: 30px;
   display: inline-block;
   margin-right: 80px;
   margin-left: 65px;
 }
-li:hover {
+li.aba:hover {
   color: grey;
   transition: 0.3s all;
 }
@@ -77,11 +77,12 @@ body {
   width: 120vw;
 }
 .content {
-  height: 1080px;
-  width: 1080px;
+  height: 650px;
+  width: 800px;
   border-radius: 20px;
   overflow: hidden;
   position: sticky;
+  margin-left: 180px;
 }
 
 .navigation {
@@ -234,10 +235,11 @@ h1 {
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-size: 30px;
+  font-size: 36px;
   color: white;
   font-weight: 400;
   text-align: left;
+  margin-bottom: -20px;
 }
 
 p,
@@ -268,13 +270,6 @@ p#copyright {
   width: 25%;
 }
 
-/* #avaliacoes > img {
-  display: block;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  border-radius: 2px;
-} */
-
 #ava01,
 #ava02,
 #ava03,
@@ -286,7 +281,6 @@ p#copyright {
   border-radius: 7px;
   box-shadow: 1px 4px 10px 4px rgb(11, 11, 56);
   margin: 5px;
-  /* margin-left: 110px; */
   height: 125px;
 }
 
@@ -306,4 +300,29 @@ p#copyright {
 #txt_ava {
   font-size: 45px;
   text-align: center;
+}
+
+div.beneficios > ul {
+  font-family: "Poppins", serif;
+  text-align: justify;
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 250px;
+}
+
+div.beneficios > ul > li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2#txt_ava {
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+div#texto_inicio > p {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: -25px;
+  margin-bottom: -30px;
 }
